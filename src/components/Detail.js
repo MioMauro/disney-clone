@@ -10,8 +10,8 @@ return (
         <ImageTitle>
             <img src='/images/BackCont1.png' alt='icons' />
         </ImageTitle>
-        <Controls>
 
+        <Controls>
         <PlayButton>
             <img src='/images/play-icon-black.png' alt='icons' />
             <span>PLAY</span>
@@ -29,8 +29,11 @@ return (
         <GroupWatchButton>
             <img src='/images/group-icon.png' alt='icons' />
         </GroupWatchButton>
-
         </Controls>
+        <Subtitle>2018 - 7m - Family, Fantasy, kids, Animation</Subtitle>
+        <Description>
+        <p>Disney+ è un servizio di video on demand gestito da Disney Media and Entertainment Distribution, divisione distributiva dei prodotti del gruppo The Walt Disney Company. È una delle più importanti piattaforme streaming di film e serie TV.</p>
+        </Description>
     </Container>
 )
 }
@@ -124,4 +127,22 @@ span {
 
 const GroupWatchButton = styled(AddButton)`
 background-color: rgb(0, 0, 0,);
+`
+
+const Subtitle = styled.div`
+margin: 0 auto;
+max-width:600px;
+color: rgb(249, 249, 249);
+font-size:15px;
+min-height:20px;
+margin-top:26px;
+`
+
+const Description = styled.div`
+margin: 0 auto;
+max-width:600px;
+line-height:1.4;
+font-size:18px;
+margin-top:16px;
+color: rgb(249, 249, 249);
 `
