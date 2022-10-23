@@ -10,6 +10,27 @@ return (
         <ImageTitle>
             <img src='/images/BackCont1.png' alt='icons' />
         </ImageTitle>
+        <Controls>
+
+        <PlayButton>
+            <img src='/images/play-icon-black.png' alt='icons' />
+            <span>PLAY</span>
+        </PlayButton>
+
+        <TrailerButton>
+            <img src='/images/play-icon-white.png' alt='icons' />
+            <span>TRAILER</span>
+        </TrailerButton>
+
+        <AddButton>
+            <span>+</span>
+        </AddButton>
+
+        <GroupWatchButton>
+            <img src='/images/group-icon.png' alt='icons' />
+        </GroupWatchButton>
+
+        </Controls>
     </Container>
 )
 }
@@ -50,4 +71,57 @@ img{
     height: 100%;
     object-fit: contain;
 }
+`
+
+const Controls = styled.div`
+margin-top: 25px;
+align-items: center;
+justify-content: center;
+display: flex;
+`
+
+const PlayButton = styled.button`
+border-radius: 4px;
+font-size: 15px;
+padding: 0px 24px;
+margin-right: 22px;
+display: flex;
+align-items: center;
+height: 56px;
+background: rgb(249, 249, 249);
+border: none;
+letter-spacing: 1.8px;
+cursor: pointer;
+
+&:hover {
+    background: rgb(198, 198, 198);
+}
+`
+
+const TrailerButton = styled(PlayButton)`
+background: rgba(249, 249, 249, 0.3);
+border: 1px solid rgb(249, 249, 249);
+color: white;
+`
+
+const AddButton = styled.button`
+margin-right: 16px;
+width: 44px;
+height: 44px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+border: 2px solid white;
+background-color: rgba(0, 0, 0, 0.6);
+cursor: pointer;
+
+span {
+    font-size: 30px;
+    color: white;
+}
+`
+
+const GroupWatchButton = styled(AddButton)`
+background-color: rgb(0, 0, 0,);
 `
