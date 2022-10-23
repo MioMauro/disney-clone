@@ -33,6 +33,7 @@ grid-gap: 25px;
 grid-template-columns: repeat(5, minmax(0, 1fr));
 `
 const Wrap = styled.div`
+transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 cursor: pointer;
 border: 2px solid transparent;
 
